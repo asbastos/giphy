@@ -1,0 +1,21 @@
+{
+    "name": "arturbastos/giphy",
+    "description": "test app",
+    "authors": [
+        {
+            "name": "Artur Bastos",
+            "email": "asbastos90@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Client": "src/"
+        }
+    }
+}   
+   
+
