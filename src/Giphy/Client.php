@@ -29,11 +29,19 @@ class Client {
     public function post(array $body, ?string $url = null): int
     {
         $response = $this->client->request('POST', $url, $body);
-
         return $response->getStatusCode():
     }
 
+    public function patch(): int
+    {
+        $response = $this->client->request('PATCH','');
+        return $response->getStatusCode();
     }
 
+    public function put(): int
+    {
+        $response = $this->client->request('PUT', '');
+        return $reponse->getStatusCode();
+    }
 }
 
