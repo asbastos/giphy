@@ -24,6 +24,7 @@ class ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Giphy\\' => 6,
         ),
     );
 
@@ -48,15 +49,9 @@ class ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'C' => 
+        'Giphy\\' => 
         array (
-            'Client' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
+            0 => __DIR__ . '/../..' . '/src/Giphy',
         ),
     );
 
@@ -65,7 +60,6 @@ class ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
