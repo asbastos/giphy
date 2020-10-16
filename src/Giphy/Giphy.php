@@ -2,7 +2,8 @@
 
 namespace Giphy;
 
-class Giphy {
+class Giphy
+{
     private $giphy;
 
     public function __construct()
@@ -30,11 +31,21 @@ class Giphy {
         $transformed['pagination'] = $image['pagination'];
         $transformed['meta'] = $image['meta'];
         
-        return $transformed;   
+        return $transformed;
     }
 
     public function searchSticker(string $search)
     {
         return $this->giphy->get('stickers/search?q=' . $search);
+    }
+
+    public function trendingGif(string $trending)
+    {
+        return $this->client->get('gifs/trending?&' . $trending);
+    }
+
+    public function trendingSticker(string $trending)
+    {
+        return $this->client->get('sticker/trendin?&' . $trending);
     }
 }

@@ -4,13 +4,13 @@ namespace Giphy;
 
 use GuzzleHttp\Client as GuzzleClient;
 
-
-class Client {
+class Client
+{
     private $client;
     private const BASE_URI = 'api.giphy.com/v1/';
     private const API_KEY = 'buQ4hVrs1xy6EySLag5bvnhl64hrsUJI';
 
-    public function __construct() 
+    public function __construct()
     {
         $this->client = new GuzzleClient([
             'base_uri' => self::BASE_URI,
@@ -36,7 +36,7 @@ class Client {
 
     public function patch(): array
     {
-        $response = $this->client->request('PATCH','');
+        $response = $this->client->request('PATCH', '');
         
         return json_decode($response->getBody(), true);
     }
@@ -54,6 +54,4 @@ class Client {
         
         return json_decode($response->getBody(), true);
     }
-
 }
-

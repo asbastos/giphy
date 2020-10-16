@@ -1,5 +1,5 @@
 {
-    "name": "arturbastos/giphy",
+    "name": "arturbastos/giphy2",
     "description": "test app",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Giphy\\": "src/Giphy"
+            "Giphy\\": "src/"
         }
     }
 }

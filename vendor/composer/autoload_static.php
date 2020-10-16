@@ -51,7 +51,7 @@ class ComposerStaticInitb165797c52e80abb0bf493ad9e3c6383
         ),
         'Giphy\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Giphy',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
